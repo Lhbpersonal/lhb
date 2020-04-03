@@ -1,0 +1,268 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="search.ascx" TagName="search" TagPrefix="uc3" %>
+<%@ Register Src="header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="entry.ascx" TagName="entry" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题文档</title>
+    <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+        .auto-style1 {
+            height: 75px;
+            width: 1002px;
+        }
+-->
+td{
+    background{
+                  width:100%
+              }
+}
+</style>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="text-align: center;height:100%">
+    <form id="form1" runat="server">
+        
+            <table width="100%" height="103" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="100%" height="118" style="background: url(images/index1.JPG)no-repeat;background-size:cover">
+                        <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" class="auto-style1">
+                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+                                        width="100%" height="75">
+                                        <param name="movie" value="swf/top.swf" />
+                                        <param name="quality" value="high" />
+                                        <param name="wmode" value="transparent" />
+                                        <embed src="swf/top.swf" width="1002" height="75" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                                            type="application/x-shockwave-flash" wmode="transparent"></embed>
+                                    </object>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" align="center" valign="top" class="daohangh" style="width: 100%">
+                                    <uc1:header ID="Header1" runat="server" />
+                                    <a href="#" class="hong"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" height="103" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="100%" style="height:162px;background:url(images/guanggao.JPG) no-repeat;background-size:cover">
+                        <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="112" style="width: 100%">
+                                    <table width="1000" height="36" align="right" cellpadding="0" cellspacing="0"">
+                                        <tr>
+                                            <td valign="bottom" style="height: 34px; text-align: left;">
+                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" height="52" style="width: 419px">
+                                                    <param name="movie" value="swf/font.swf" />
+                                                    <param name="quality" value="high" />
+                                                    <param name="wmode" value="transparent" />
+                                                    <embed src="swf/font.swf" width="452" height="52" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                                                        type="application/x-shockwave-flash" wmode="transparent"></embed>
+                                                </object>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="height: 50px; width: 1002px;">
+                                    <table width="540" height="36" align="right" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td valign="bottom" style="height: 36px; text-align: left">
+                                                <span class="huise1" style="width: 100px; height: 22px">
+                                                    <uc3:search ID="Search1" runat="server" />
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+            <tr>
+                <td style="width: 19px" valign="top"><table width="170"  align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td height="32" style="width: 230px">
+                            <img src="images/dengl.GIF" width="226" height="32" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="height: 150px; width: 230px;">
+                            <table width="100%" cellpadding="1" cellspacing="1" bgcolor="#746350">
+                                <tr>
+                                    <td  valign="top" bgcolor="#FFFFFF" style="height: 128px">
+                                        <asp:Panel id="pelEntry" runat="server" Width="125px">
+                                                    <uc2:entry ID="Entry1" runat="server"   />
+                                                </asp:Panel>
+                            <asp:Panel id="pelWelcom" runat="server" Width="214px">
+                                                    <asp:Label ID="Label1" runat="server" Text="Label" Width="96px"></asp:Label><br  />
+                                                    欢迎您登录!<br  />
+                                                    <asp:LinkButton
+                                                        ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">[退出登录 ]</asp:LinkButton></asp:Panel> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                    <table width="170"  align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td height="32">
+                                <img src="images/zhaopin.GIF" width="226" height="32" /></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="height: 150px">
+                                <table width="100%" cellpadding="1" cellspacing="1" bgcolor="#746350">
+                                    <tr>
+                                        <td  valign="top" bgcolor="#FFFFFF" style="height: 128px">
+                                            <marquee direction="up" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="3"
+                                                style="width: 223px; height: 126px"><asp:GridView id="gvJob" runat="server" Width="214px" Height="102px" AutoGenerateColumns="False" BorderWidth="0px" ShowHeader="False" CssClass="huise1"><Columns>
+<asp:TemplateField HeaderText="招聘职位"><ItemTemplate>
+                                      <a href="#" onclick='openPWD("jobInfo.aspx?ID=<%#Eval("JobID")%>",500,600)'>
+                                          <%#Eval("Job")%>
+                                      </a>
+                                  
+</ItemTemplate>
+</asp:TemplateField>
+<asp:BoundField HtmlEncode="False" DataFormatString="{0:yy-MM-dd}" DataField="FBDate"></asp:BoundField>
+</Columns>
+</asp:GridView></marquee>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="170"  align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td height="32">
+                                <img src="images/news.GIF" width="226" height="32" /></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="height: 150px">
+                                <table width="100%" cellpadding="1" cellspacing="1" bgcolor="#746350">
+                                    <tr>
+                                        <td  valign="top" bgcolor="#FFFFFF" style="height: 128px">
+                                            <marquee direction="up" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="3"
+                                                style="width: 223px; height: 126px"><asp:GridView id="gvNews" runat="server" Width="214px" CssClass="huise1"  ShowHeader="False" BorderWidth="0px" AutoGenerateColumns="False" Height="95px"><Columns>
+<asp:TemplateField><ItemTemplate>
+                                          <a class="huise1" href="#" onclick='openPWD("news.aspx?NewsID=<%#Eval("ID")%>",500,300)'>
+                                              <%#Eval("NewsTitle")%>
+                                          </a>
+                                      
+</ItemTemplate>
+</asp:TemplateField>
+<asp:BoundField HtmlEncode="False" DataFormatString="{0:yy-MM-dd}" DataField="FBDate"></asp:BoundField>
+</Columns>
+</asp:GridView></marquee>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="170"  align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td height="32">
+                                <img src="images/qiye.GIF" width="226" height="32" /></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="height: 150px">
+                                <table width="100%" cellpadding="1" cellspacing="1" bgcolor="#746350">
+                                    <tr>
+                                        <td  valign="top" bgcolor="#FFFFFF" style="height: 128px">
+                                           <asp:GridView id="gvCompany"  runat="server" Width="214px" CssClass="huise1" BorderWidth="1px" AutoGenerateColumns="False" Height="1px">
+                                                    <Columns >
+                                                        <asp:TemplateField  HeaderText="企业名称">
+                                                            <ItemTemplate >
+                                                                <a   href="#" onclick='openPWD("companyInfo.aspx?ID=<%#Eval("ID")%>",500,600)' >
+                                                                    <%#Eval("CompanyName")%>
+                                                                </a>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:BoundField  DataField="Kind" HeaderText="企业性质" ></asp:BoundField>
+                                                        <asp:TemplateField  HeaderText="企业简介">
+                                                            <ItemTemplate >
+                                                                <marquee  direction="up" onmouseout="this.start()" scrollamount="2" style="height: 60px;
+                                                                    width: 70px;">
+                                                        <span><%#Eval("Content")%></span>
+                                                        </marquee>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                    </Columns>
+                                                </asp:GridView>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+       
+        
+            <table height="40" align="center" cellpadding="0" cellspacing="0" style="width: 100%">
+                <tr>
+                    <td width="100%" valign="top" style="height: 88px;background:url(images/end.GIF) no-repeat;background-size:cover">
+                        <table width="100%" height="80" align="right" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="huise1" style="height: 20px">
+                                    <a href="freightList.aspx" class="huise">货源信息</a> &nbsp; | &nbsp; <a href="truckList.aspx" class="huise">车源信息</a>
+                                    &nbsp; | &nbsp; <a href="specialList.aspx" class="huise">专线信息</a> &nbsp; | &nbsp; <a href="companyList.aspx" class="huise">
+                                        企业信息</a> &nbsp; | &nbsp; <a href="depotList.aspx" class="huise">仓储信息</a> &nbsp; | &nbsp;
+                                    <a href="jobList.aspx" class="huise">招聘信息</a> &nbsp; | &nbsp; <a href="manageEntry.aspx" class="huise">后台登录</a></td>
+                            </tr>
+                            <tr>
+                                <td height="35" class="chengse">
+                                    中国民航大学170341317梁寒冰 版权所有
+                                    <br />
+                                    联系电话：17302293359 E-mail：17302293359@163.com</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </form>
+</body>
+</html>
